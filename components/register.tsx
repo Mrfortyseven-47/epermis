@@ -1,4 +1,5 @@
 import React from 'react'
+import exam from '../src/assets/exam.jpg'
 
 export default function Register() {
   return (
@@ -12,7 +13,7 @@ export default function Register() {
         {/* Partie gauche avec image */}
         <div className="hidden md:block md:w-1/2">
           <img
-            src="../src/assets/exam.jpg"
+            src={exam}
             alt="Illustration d'inscription"
             className="h-full w-full object-cover"
           />

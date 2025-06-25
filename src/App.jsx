@@ -12,6 +12,7 @@ import Cours from '../components/admin/cours'
 import Examen from '../components/admin/examen'
 import AdminExamen from '../components/admin/ExamenAdmin'
 import ExamAdminDetails from '../components/admin/ExamAdminDetails'
+import logo from './assets/logo2.jpeg'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -55,7 +56,7 @@ function NavBar({ isOpen, setIsOpen }) {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
          <img
-          src="src/assets/logo2.jpeg" 
+          src={logo} 
           alt="e-Permis Logo"
           className="h-15 rounded-full w-auto select-none"
         />
