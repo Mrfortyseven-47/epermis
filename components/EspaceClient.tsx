@@ -62,8 +62,10 @@ export default function EspaceClient() {
             </Link>
           </div>
           <div className="p-6 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-2xl shadow-lg cursor-pointer hover:scale-105 transition">
+            <Link to="/candidat/examen" className="no-underline text-white">
             <h2 className="text-2xl font-bold mb-2">📝 Gérer mes examens</h2>
             <p>Consultez, planifiez ou révisez vos examens.</p>
+            </Link>
           </div>
         </section>
 

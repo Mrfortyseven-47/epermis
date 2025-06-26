@@ -14,6 +14,7 @@ import AdminExamen from '../components/admin/ExamenAdmin'
 import ExamAdminDetails from '../components/admin/ExamAdminDetails'
 import logo from './assets/logo2.jpeg'
 import CoursCandidat from '../components/candidat/CoursCandidat'
+import ExamCandidat from '../components/candidat/ExamCandidat'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,6 +37,9 @@ function App() {
 
           {/* partie candidat*/ }
           <Route path="/candidat/cours" element={<CoursCandidat/>} />
+          <Route path="/candidat/examen" element={<ExamCandidat/>} />
+
+          {/* Catch-all route for 404 */}
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </div>
