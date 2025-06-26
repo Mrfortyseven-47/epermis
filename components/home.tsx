@@ -74,10 +74,10 @@ export default function Home() {
 					))}
 				</div>
 			</div>
-			<div className="w-full flex flex-col md:flex-row items-center justify-center px-10 py-8 bg-white rounded-lg shadow-md mt-5 gap-2 border-2 border-blue-500">
-				<div className="h-auto w-2/3 mb-6 md:mb-0 flex flex-col items-center justify-center px-2 sm:px-30">
+			<div className="w-full flex flex-col md:flex-row items-center justify-center py-8 bg-white rounded-lg shadow-md mt-5 gap-2 border-2 border-blue-500">
+				<div className="h-auto w-2/3 mb-6 md:mb-0 flex flex-col items-center justify-center ">
 					<h1 className='font-bold italic text-2xl text-blue-800 mb-4'>En avant toute !</h1>
-					<p className="text-lg sm:text-base text-gray-700 text-justify">
+					<p className="text-lg  text-gray-700 text-justify">
 						L’examen se déroule sur vos appareils personnels, que ce soit une tablette, un smartphone ou un ordinateur portable. Il est individuel : vous n'aurez pas les mêmes questions que vos voisins. Vous devrez répondre à 40 questions à choix multiples, présentées sous forme de photos ou vidéos. Pour réussir l'examen, vous devez avoir répondu correctement à 35 questions sur les 40 posées.
 						<br /><br />
 						Le jour de l’examen, veuillez vous connecter 15 minutes avant l'heure de la session. N’oubliez surtout pas votre convocation imprimée et votre document d’identité valable. Avant de commencer, assurez-vous que votre appareil est en mode silencieux et que vous avez déposé vos effets personnels dans l'espace prévu à cet effet.

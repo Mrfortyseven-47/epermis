@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from './tinyComponents/footer'
+import { Link } from 'react-router-dom'
 
 export default function EspaceClient() {
   const clientInfo = {
@@ -21,8 +22,8 @@ export default function EspaceClient() {
 
   return (
     <>
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 p-10 sm:p-8">
-      <div className="max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl p-6 sm:p-10 space-y-10">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 py-10 sm:p-15">
+      <div className="w-6/7 mx-auto bg-white shadow-2xl rounded-3xl p-6 sm:p-10 space-y-10">
 
         {/* HEADER */}
         <div className="text-center space-y-2">
@@ -55,8 +56,10 @@ export default function EspaceClient() {
         {/* BLOCS PRINCIPAUX */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="p-6 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl shadow-lg cursor-pointer hover:scale-105 transition">
-            <h2 className="text-2xl font-bold mb-2">📚 Accéder à mes cours</h2>
-            <p>Continuez vos formations à votre rythme.</p>
+            <Link to="/candidat/cours" className="no-underline text-white">
+              <h2 className="text-2xl font-bold mb-2">📚 Accéder à mes cours</h2>
+              <p>Continuez vos formations à votre rythme.</p>
+            </Link>
           </div>
           <div className="p-6 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-2xl shadow-lg cursor-pointer hover:scale-105 transition">
             <h2 className="text-2xl font-bold mb-2">📝 Gérer mes examens</h2>

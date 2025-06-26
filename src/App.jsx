@@ -13,6 +13,7 @@ import Examen from '../components/admin/examen'
 import AdminExamen from '../components/admin/ExamenAdmin'
 import ExamAdminDetails from '../components/admin/ExamAdminDetails'
 import logo from './assets/logo2.jpeg'
+import CoursCandidat from '../components/candidat/CoursCandidat'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,6 +33,9 @@ function App() {
           <Route path="/cours" element={<Cours />} />
           <Route path="/examen" element={<AdminExamen />} />
           <Route path="/admin/exam-details/:examId" element={<ExamAdminDetails />} />
+
+          {/* partie candidat*/ }
+          <Route path="/candidat/cours" element={<CoursCandidat/>} />
           <Route path="*" element={<div>404 Not Found</div>} />
         </Routes>
       </div>
@@ -53,7 +57,7 @@ function NavBar({ isOpen, setIsOpen }) {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-blue-50 backdrop-blur shadow transition-all">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="w-full px-4 py-3 flex items-center justify-between">
         {/* Logo */}
          <img
           src={logo} 
@@ -122,7 +126,7 @@ function NavLinkPro({ to, label, active, mobile = false, onClick }) {
         }
         `
       }
-      style={{ fontWeight: active ? 'bold' : undefined }}
+      style={{ fontWeight: 'bold' , fontSize: mobile ? '1.2rem' : '20px' }}
     >
       {label}
     </Link>

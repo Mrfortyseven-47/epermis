@@ -24,7 +24,7 @@ export default function ExamenAdmin() {
   }
 
   return (
-    <div className="flex h-auto bg-gray-100">
+    <div className="">
       {/* Aside Navigation */}
       <AsideNav />
 
